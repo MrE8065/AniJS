@@ -1,0 +1,23 @@
+{
+  "name": "anijs",
+  "version": "1.0.0",
+  "description": "Aplicación de Electron para ver anime",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MrE8065/AniJS.git"
+  },
+  "keywords": ["electron", "anime", "escritorio"],
+  "author": "MrE8065",
+  "homepage": "https://github.com/MrE8065/AniJS#readme",
+  "bugs": {
+    "url": "https://github.com/MrE8065/AniJS/issues"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "36.3.1"
+  }
+}
