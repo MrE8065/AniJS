@@ -10,7 +10,11 @@
     "type": "git",
     "url": "https://github.com/MrE8065/AniJS.git"
   },
-  "keywords": ["electron", "anime", "escritorio"],
+  "keywords": [
+    "electron",
+    "anime",
+    "escritorio"
+  ],
   "author": "MrE8065",
   "homepage": "https://github.com/MrE8065/AniJS#readme",
   "bugs": {
