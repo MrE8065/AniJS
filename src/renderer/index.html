@@ -3,11 +3,161 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'"/>
-        <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'"/>
+        <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'"/>
+        <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'"/> -->
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+        <link rel="shortcut icon" href="./assets/icon.svg" type="image/svg+xml">
         <title>AniJS</title>
     </head>
+    <header>
+        <div class="header">
+            <a class="name" href="./index.html">
+                <img class="logo" src="./assets/site.svg" alt="Logo de AniJS">
+            </a>
+            <div class="search-bar">
+                <form>
+                    <div class="search">
+                        <span class="search-icon material-symbols-outlined">search</span>
+                        <input class="search-input" type="search" placeholder="Buscar anime...">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
     <body>
+        <div class="container" id="popular">
+            <h2>Popular</h2>
+            <div class="card-scroll-wrapper">
+                <div class="card-container popular">
+                    <div class="card">
+                        <img class="card-img" src="https://cdn.myanimelist.net/images/anime/4/19644l.webp" alt="Carátula del anime">
+                        <span class="card-title">Otome Game no Hametsu Flag shika Nai Akuyaku Reijou ni Tensei shiteshimatta... Movie</span>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="https://cdn.myanimelist.net/images/anime/1171/109222l.webp" alt="Carátula del anime">
+                        <span class="card-title">Otome Game no Hametsu Flag shika Nai Akuyaku Reijou ni Tensei shiteshimatta... Movie</span>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="https://cdn.myanimelist.net/images/anime/1711/142478l.webp" alt="Carátula del anime">
+                        <span class="card-title">Otome Game no Hametsu Flag shika Nai Akuyaku Reijou ni Tensei shiteshimatta... Movie</span>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="https://cdn.myanimelist.net/images/anime/1485/144735l.webp" alt="Carátula del anime">
+                        <span class="card-title">Otome Game no Hametsu Flag shika Nai Akuyaku Reijou ni Tensei shiteshimatta... Movie</span>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="https://cdn.myanimelist.net/images/anime/4/19644l.webp" alt="Carátula del anime">
+                        <span class="card-title">Otome Game no Hametsu Flag shika Nai Akuyaku Reijou ni Tensei shiteshimatta... Movie</span>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="https://cdn.myanimelist.net/images/anime/1485/144735l.webp" alt="Carátula del anime">
+                        <span class="card-title">Otome Game no Hametsu Flag shika Nai Akuyaku Reijou ni Tensei shiteshimatta... Movie</span>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="https://cdn.myanimelist.net/images/anime/1171/109222l.webp" alt="Carátula del anime">
+                        <span class="card-title">Otome Game no Hametsu Flag shika Nai Akuyaku Reijou ni Tensei shiteshimatta... Movie</span>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="https://cdn.myanimelist.net/images/anime/1711/142478l.webp" alt="Carátula del anime">
+                        <span class="card-title">Otome Game no Hametsu Flag shika Nai Akuyaku Reijou ni Tensei shiteshimatta... Movie</span>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="https://cdn.myanimelist.net/images/anime/4/19644l.webp" alt="Carátula del anime">
+                        <span class="card-title">Otome Game no Hametsu Flag shika Nai Akuyaku Reijou ni Tensei shiteshimatta... Movie</span>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="https://cdn.myanimelist.net/images/anime/4/19644l.webp" alt="Carátula del anime">
+                        <span class="card-title">Otome Game no Hametsu Flag shika Nai Akuyaku Reijou ni Tensei shiteshimatta... Movie</span>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="https://cdn.myanimelist.net/images/anime/1485/144735l.webp" alt="Carátula del anime">
+                        <span class="card-title">Otome Game no Hametsu Flag shika Nai Akuyaku Reijou ni Tensei shiteshimatta... Movie</span>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="https://cdn.myanimelist.net/images/anime/1171/109222l.webp" alt="Carátula del anime">
+                        <span class="card-title">Otome Game no Hametsu Flag shika Nai Akuyaku Reijou ni Tensei shiteshimatta... Movie</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container" id="recientes">
+            <h2>Recientes</h2>
+            <div class="card-scroll-wrapper">
+                <div class="card-container recientes">
+                    <div class="card">
+                        <img class="card-img" src="https://cdn.myanimelist.net/images/anime/1577/147967l.webp" alt="Carátula del anime">
+                        <span class="card-title">Otome Game no Hametsu Flag shika Nai Akuyaku Reijou ni Tensei shiteshimatta... Movie</span>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="https://cdn.myanimelist.net/images/anime/1171/109222l.webp" alt="Carátula del anime">
+                        <span class="card-title">Otome Game no Hametsu Flag shika Nai Akuyaku Reijou ni Tensei shiteshimatta... Movie</span>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="https://cdn.myanimelist.net/images/anime/4/19644l.webp" alt="Carátula del anime">
+                        <span class="card-title">Otome Game no Hametsu Flag shika Nai Akuyaku Reijou ni Tensei shiteshimatta... Movie</span>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="https://cdn.myanimelist.net/images/anime/1711/142478l.webp" alt="Carátula del anime">
+                        <span class="card-title">Otome Game no Hametsu Flag shika Nai Akuyaku Reijou ni Tensei shiteshimatta... Movie</span>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="https://cdn.myanimelist.net/images/anime/1485/144735l.webp" alt="Carátula del anime">
+                        <span class="card-title">Otome Game no Hametsu Flag shika Nai Akuyaku Reijou ni Tensei shiteshimatta... Movie</span>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="https://cdn.myanimelist.net/images/anime/4/19644l.webp" alt="Carátula del anime">
+                        <span class="card-title">Otome Game no Hametsu Flag shika Nai Akuyaku Reijou ni Tensei shiteshimatta... Movie</span>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="https://cdn.myanimelist.net/images/anime/1577/147967l.webp" alt="Carátula del anime">
+                        <span class="card-title">Otome Game no Hametsu Flag shika Nai Akuyaku Reijou ni Tensei shiteshimatta... Movie</span>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="https://cdn.myanimelist.net/images/anime/1171/109222l.webp" alt="Carátula del anime">
+                        <span class="card-title">Otome Game no Hametsu Flag shika Nai Akuyaku Reijou ni Tensei shiteshimatta... Movie</span>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="https://cdn.myanimelist.net/images/anime/4/19644l.webp" alt="Carátula del anime">
+                        <span class="card-title">Otome Game no Hametsu Flag shika Nai Akuyaku Reijou ni Tensei shiteshimatta... Movie</span>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="https://cdn.myanimelist.net/images/anime/1171/109222l.webp" alt="Carátula del anime">
+                        <span class="card-title">Otome Game no Hametsu Flag shika Nai Akuyaku Reijou ni Tensei shiteshimatta... Movie</span>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="https://cdn.myanimelist.net/images/anime/4/19644l.webp" alt="Carátula del anime">
+                        <span class="card-title">Otome Game no Hametsu Flag shika Nai Akuyaku Reijou ni Tensei shiteshimatta... Movie</span>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="https://cdn.myanimelist.net/images/anime/4/19644l.webp" alt="Carátula del anime">
+                        <span class="card-title">Otome Game no Hametsu Flag shika Nai Akuyaku Reijou ni Tensei shiteshimatta... Movie</span>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="https://cdn.myanimelist.net/images/anime/1711/142478l.webp" alt="Carátula del anime">
+                        <span class="card-title">Otome Game no Hametsu Flag shika Nai Akuyaku Reijou ni Tensei shiteshimatta... Movie</span>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="https://cdn.myanimelist.net/images/anime/4/19644l.webp" alt="Carátula del anime">
+                        <span class="card-title">Otome Game no Hametsu Flag shika Nai Akuyaku Reijou ni Tensei shiteshimatta... Movie</span>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="https://cdn.myanimelist.net/images/anime/4/19644l.webp" alt="Carátula del anime">
+                        <span class="card-title">Otome Game no Hametsu Flag shika Nai Akuyaku Reijou ni Tensei shiteshimatta... Movie</span>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="https://cdn.myanimelist.net/images/anime/4/19644l.webp" alt="Carátula del anime">
+                        <span class="card-title">Otome Game no Hametsu Flag shika Nai Akuyaku Reijou ni Tensei shiteshimatta... Movie</span>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="https://cdn.myanimelist.net/images/anime/1485/144735l.webp" alt="Carátula del anime">
+                        <span class="card-title">Otome Game no Hametsu Flag shika Nai Akuyaku Reijou ni Tensei shiteshimatta... Movie</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <script src="renderer.js"></script>
     </body>
 </html>

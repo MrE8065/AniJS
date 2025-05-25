@@ -1,0 +1,219 @@
+:root {
+    --bg-color: #0A0A0A;
+    --text-color: #F1F1F1;
+    --color: #8C8C8C;
+    --br-color: #1C1C1C;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+/*---------------------------------*/
+.header {
+    --logo-scale: 70px;
+
+    display: flex;
+    align-items: center;
+    padding: 10px 40px;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: var(--logo-scale);
+    height: var(--logo-scale);
+}
+
+/*---------------------------------*/
+
+.search-bar {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.search {
+    --padding: 14px;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    padding: var(--padding);
+    border-radius: 28px;
+    background-color: #3b3c3d;
+    transition: background-color 0.25s;
+}
+
+.search:focus-within {
+    background-color: #666666;
+}
+
+.search-input {
+    font-size: 16px;
+    color: #ccc;
+    margin-left: var(--padding);
+    outline: none;
+    border: none;
+    background-color: transparent;
+    width: 600px;
+}
+
+
+.search-input::placeholder,
+.search-icon {
+    color: rgba(158, 158, 158, 0.5);
+}
+/*---------------------------------*/
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 40px;
+}
+
+h2 {
+    margin: 0;
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+.card-scroll-wrapper {
+    position: relative;
+}
+
+.card-scroll-wrapper::before,
+.card-scroll-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.card-scroll-wrapper::before {
+    left: 70px;
+    background: linear-gradient(to right, var(--bg-color), transparent);
+}
+
+.card-scroll-wrapper::after {
+    right: 70px;
+    background: linear-gradient(to left, var(--bg-color), transparent);
+}
+
+.card-container {
+    position: relative;
+    margin: 0 70px;
+    padding: 10px 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+
+    overflow-x: hidden;
+    overscroll-behavior-x: contain;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    /*anchor-name: --carousel;*/
+
+    > .card {
+        scroll-snap-align: center;
+    }
+
+    &::scroll-button(*) {
+        position: fixed;
+        box-sizing: border-box;
+        /*position-anchor: --carousel;*/
+        font-family: "Material Symbols Outlined";
+        border: transparent;
+        background: transparent;
+        color: #ced4da;
+        /*border-radius: 50%;*/
+        aspect-ratio: 1;
+        cursor: pointer;
+        margin: 10px;
+        font-size: 40px;
+        inline-size: 60px;
+    }
+
+    &::scroll-button(*):disabled {
+        opacity: 25%;
+        cursor: not-allowed;
+    }
+
+    &::scroll-button(*):active {
+        background-color: #fff3;
+        inline-size: 40px;
+        transition: inline-size 0.2s ease-in-out;
+    }
+
+    &::scroll-button(right) {
+        position-area: inline-end center;
+        content: 'arrow_forward' / 'Next';
+    }
+
+    &::scroll-button(left) {
+        position-area: inline-start center;
+        content: 'arrow_back' / 'Previous';
+    }
+}
+
+.popular{
+    anchor-name: --carousel;
+    &::scroll-button(*) {
+        position-anchor: --carousel;
+    }
+}
+
+.recientes {
+    anchor-name: --carousel2;
+    &::scroll-button(*) {
+        position-anchor: --carousel2;
+    }
+}
+
+.card {
+    cursor: pointer;
+    flex: 1 0 auto;
+    height: 600px;
+    width: 450px;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.card:hover {
+    box-shadow: 0 0 0 2px #8C8C8C;
+}
+
+.card img {
+    width: 100%;
+    display: block;
+}
+
+.card .card-title {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 0 20px 20px;
+    background: linear-gradient(to top, rgb(0, 0, 0) 20%, transparent 100%);
+    color: var(--text-color);
+    font-size: 18px;
+    box-sizing: border-box;
+}
