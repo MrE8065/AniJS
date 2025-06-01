@@ -217,3 +217,26 @@ h2 {
     font-size: 18px;
     box-sizing: border-box;
 }
+
+/*--------------------------------------------*/
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--br-color);
+    border-radius: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 8px;
+    border: 2px solid var(--br-color);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #777;
+}
+
+/*--------------------------------------------*/
