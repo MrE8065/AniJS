@@ -2,7 +2,7 @@
   "name": "anijs",
   "version": "1.0.0",
   "description": "Aplicación de Electron para ver anime",
-  "main": "main.js",
+  "main": "src/main/main.js",
   "scripts": {
     "start": "electron ."
   },
@@ -23,5 +23,9 @@
   "license": "MIT",
   "devDependencies": {
     "electron": "36.3.1"
+  },
+  "dependencies": {
+    "axios": "1.9.0",
+    "cheerio": "1.0.0"
   }
 }
